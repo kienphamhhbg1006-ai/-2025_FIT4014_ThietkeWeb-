@@ -1,0 +1,59 @@
+
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>Employee Info</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#f5f6f7; padding:20px; }
+    .card { background:#fff; border:1px solid #ccc; border-radius:6px; padding:20px; max-width:500px; margin:auto; }
+    .field { margin-bottom:12px; }
+    label { display:block; margin-bottom:4px; font-weight:bold; }
+    input, select, textarea { width:100%; padding:6px; border:1px solid #aaa; border-radius:4px; }
+    textarea { min-height:80px; }
+    .radio-group { display:flex; gap:10px; }
+    button { margin-top:10px; padding:8px 14px; border:none; border-radius:4px; background:#2d78c7; color:white; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Employee Info</h2>
+
+    <div class="field">
+      <label>Employee ID</label>
+      <input type="text" value="9" readonly>
+    </div>
+
+    <div class="field">
+      <label>Họ và tên</label>
+      <input type="text" value="Anne Dodsworth">
+    </div>
+
+    <div class="field">
+      <label>Giới tính</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender"> Nam</label>
+        <label><input type="radio" name="gender"> Nữ</label>
+        <label><input type="radio" name="gender" checked> Khác</label>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Chức vụ</label>
+      <input type="text" value="Sales Representative">
+    </div>
+
+    <div class="field">
+      <label>Ngày sinh</label>
+      <input type="date" value="1969-07-02">
+    </div>
+
+    <div class="field">
+      <label>Ghi chú</label>
+      <textarea>Anne has a BA degree in English. She is fluent in French and German.</textarea>
+    </div>
+
+    <button type="button">Lưu thông tin</button>
+  </div>
+</body>
+</html>
